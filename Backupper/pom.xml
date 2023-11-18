@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>club.unburn</groupId>
+  <artifactId>Backupper</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Backupper</name>
+  <description>Simple Backupping Files &amp; Databases</description>
+  <properties>
+    <jackson.version>2.14.2</jackson.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>2.11.0</version>
+	</dependency>
+	<dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.30</version>
+    </dependency>
+	<dependency>
+		<groupId>org.bitbucket.tbrugz</groupId>
+		<artifactId>sqldump</artifactId>
+		<version>0.9.17</version>
+	</dependency>
+  </dependencies>
+</project>

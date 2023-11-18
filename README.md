@@ -15,7 +15,7 @@ Backupper is a easy to use and modular compression tool to save your folders, fi
  - Adding MySQL tables to your backup action
  - Logging errors to your matching log file
 
-
+Any action (.json file in `actions/`) are loaded and can be executed within the programm and export a .log and a .zip file``
 ## Setup
 
 Clone the project

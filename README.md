@@ -5,6 +5,9 @@
 ## Demo
 ![Backupper](https://i.imgur.com/4WFdR7P.gif "Backupper")
 
+## Logfile
+![Logfile](https://i.imgur.com/2LPsLqD.gif "Logfile")
+
 Backupper is a easy to use and modular compression tool to save your folders, files and your databases to a zip files. To Download the current Release check out the [Release Page](https://www.google.com "Google's Homepage")
 #### What is the boilerplate of this
  - Adding folders to your backup action
@@ -69,7 +72,7 @@ Edit the test action saved in `actions/gen.json`
 ```
 `name` - Name of action (Make sure to use valid filenames if you use it as `exportname`)
 
-`filepaths` - Files and folders that should be saved
+`filepaths` - Files and folders that should be saved (optional)
 ```json
   "filepaths" : [ 
       "/home/test.txt",
@@ -77,7 +80,9 @@ Edit the test action saved in `actions/gen.json`
    ],
 ```
 
-`toexportdb` - Any SQL Dump Files or MySQL whole database/table, `*` means whole database 
+`toexportdb` - Any SQL Dump Files or MySQL whole database/table, `*` means whole database (optional)
+
+`database` - Which database is used (optional)
 
 ```json
   "toexportdb" : [ 
@@ -86,11 +91,13 @@ Edit the test action saved in `actions/gen.json`
       "mytable"
    ],
 ```
-`exportname` - Name used in logs, as exportname and in folders 
+`exportname` - Name used in logs, as exportname and in folders
 
 `compressing` - Output compression currently only zip
 
-`decaying` - Comming soon
+`interval` - Comming soon (optional)
+
+`decaying` - Comming soon (optional)
 
 ## Run Arguments
 
